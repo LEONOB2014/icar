@@ -1,6 +1,6 @@
 !>----------------------------------------------------------
-!!
 !! This module provides a wrapper to call various land surface models
+!!
 !! It sets up variables specific to the LSM to be used including both
 !! history variables not currently stored in the domain level data 
 !! structure, and runtime parameters
@@ -29,7 +29,8 @@
 !!      model_time      = time since beginning date (seconds)
 !! </pre>
 !!
-!! Author : Ethan Gutmann (gutmann@ucar.edu)
+!!  @author
+!!  Ethan Gutmann (gutmann@ucar.edu)
 !!
 !!----------------------------------------------------------
 module land_surface
@@ -38,7 +39,6 @@ module land_surface
     use module_lsm_simple,   only : lsm_simple, lsm_simple_init
     use module_water_simple, only : water_simple
     use io_routines,         only : io_write3d, io_write2d
-    use output,              only : write_domain
     use data_structures
     
     implicit none
