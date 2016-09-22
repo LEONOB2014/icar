@@ -86,6 +86,8 @@ module data_structures
     integer,parameter::MAXVARLENGTH     = 200   ! maximum variable name length
     integer,parameter::MAXLEVELS        = 500   ! maximum number of vertical layers (should typically be ~10-20)
     integer,parameter::MAX_NUMBER_FILES = 50000 ! maximum number of permitted input files (probably a bit extreme)
+    ! define which image could be considered the "master" image to handle IO for a coarrays program
+    integer,parameter::kMASTER_IMAGE    = 1
 
 ! ------------------------------------------------
 ! Physics scheme selection definitions
