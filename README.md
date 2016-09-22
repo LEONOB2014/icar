@@ -1,5 +1,10 @@
 #The Intermediate Complexity Atmospheric Research Model (ICAR)
 
+### Branch Specific Note:
+This is a branch to test out the use of coarray's in ICAR.  For now you can compile with coarrays using 
+
+    make MODE=coarray
+
 [![Build Status](https://travis-ci.org/NCAR/icar.svg)](https://travis-ci.org/NCAR/icar)
 [![Documentation Status](https://readthedocs.org/projects/icar/badge/)](http://icar.readthedocs.org/en/develop/)
 
