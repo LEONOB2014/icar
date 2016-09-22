@@ -282,6 +282,13 @@ ifeq ($(MODE), debugomp)
 	endif
 endif
 
+ifeq ($(MODE), coarray)
+	ifeq ($(F90), ifort)
+		COMP= -c -u  -O -coarray=shared
+		LINK= -coarray=shared
+	endif
+endif
+
 PROF=
 ifeq ($(MODE), profile)
 	ifeq ($(F90), ifort)

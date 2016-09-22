@@ -32,7 +32,8 @@ program icar
     integer            :: i,nx,ny,start_point
     integer            :: year, month, day, hour, minute, second
     double precision   :: model_time,next_output
-        
+    
+    print *, "hello from image",this_image()    
 !-----------------------------------------
 !  Model Initialization
 !
